@@ -1,0 +1,55 @@
+*{
+    margin: 0;padding: 0;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+.nav_section{
+    display: flex;
+    justify-content:space-between;
+    background-color: black;
+    padding: 10px;
+}
+.Portfolio{
+    color: gold;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+.Portfolio:hover{
+
+    color: white;
+   
+    }
+.ul-nav {
+    text-align: right;
+background-color: black;
+}
+
+.ul-nav li {
+    display: inline-block;
+    padding: 10px ;
+   
+}
+.Nav{
+color: gold;
+text-decoration: none;
+font-size: 30px;
+}
+.Nav:hover{
+
+    color: white;
+   
+    }
+ 
+.btn{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+    
+}  
+

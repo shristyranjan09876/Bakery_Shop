@@ -1,0 +1,21 @@
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+.gallery-item{
+    width: 50%;
+    margin: 20px;
+
+}
+.gallery1{
+    background-color: black;
+    color: white;
+
+}
+.hrtag{
+    width: 30%;
+   
+    margin-left: 35%;
+    border: 2px solid go;
+}

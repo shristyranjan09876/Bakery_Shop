@@ -1,0 +1,28 @@
+/* Hide scrollbar for .homecomp class */
+.homecomp::-webkit-scrollbar {
+  display: none; /* WebKit browsers */
+  
+}
+
+.homecomp {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+
+/* Other styles */
+.whyusec {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+/* hr{
+    border: 2px solid rgb(243, 207, 2);
+    width: 90px;
+  margin-left: 700px;
+} */

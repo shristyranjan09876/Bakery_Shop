@@ -1,0 +1,331 @@
+// import React from 'react';
+// import './Skill.css';
+// import myImage from './img/particles.gif'
+
+// const Skills = () => {
+//     return (
+//         <section className='experience-section'>
+//             <div className='container'>
+//                 <div className='section_title center'>
+//                     <p>My Skills</p>
+//                 </div>
+//                 <div className='experience-items'>
+//                     <div className='experience-info'>
+//                         <p>React.js</p>
+//                         <p>80%</p>
+//                     </div>
+//                     <div className='progress-line' data-percent='80%'>
+//                         <span style={{ width: '80%' }}></span>
+//                     </div>
+//                 </div>
+
+//                 <div className='experience-items'>
+//                     <div className='experience-info'>
+//                         <p>Bootstrap</p>
+//                         <p>70%</p>
+//                     </div>
+//                     <div className='progress-line' data-percent='70%'>
+//                         <span style={{ width: '70%' }}></span>
+//                     </div>
+//                 </div>
+
+//                 <div className='experience-items'>
+//                     <div className='experience-info'>
+//                         <p>MySQL</p>
+//                         <p>60%</p>
+//                     </div>
+//                     <div className='progress-line' data-percent='60%'>
+//                         <span style={{ width: '60%' }}></span>
+//                     </div>
+//                 </div>
+//             </div>
+//             <img src={myImage} alt="My Profile" className="profile-image" />
+//         </section>
+//     );
+// };
+
+// export default Skills;
+
+
+
+
+
+
+/* Container styles */
+.container {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Responsive container sizes */
+@media (min-width: 768px) {
+    .container {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1350px;
+    }
+}
+
+/* Section title styles */
+.section_title p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #fd6e0a;
+}
+
+.section_title.center {
+    text-align: center;
+}
+
+
+.experience-section {
+    padding: 65px 0 100px;
+    background-color: navy; /* Blue background */
+    position: relative;
+}
+
+.experience-section .experience-items {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.experience-items {
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+
+.experience-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.experience-info p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    opacity: 1;
+    animation: showText 0.5s 1s linear forwards;
+}
+
+/* Progress line styles */
+.progress-line {
+    margin-top: 7px;
+    height: 10px;
+    width: 100%;
+    background-color: #cdcdcd;
+    border-radius: 50px;
+    position: relative;
+}
+
+.progress-line span {
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    height: 100%;
+    border-radius: 50px;
+    background-color: #fd6e0a;
+    transition: 1s all;
+}
+
+/* Keyframes for animations */
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.container {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 7960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1350px;
+    }
+}
+
+.section_title p {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #fd6e0a;
+}
+
+.section_title h2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    color: #15295f;
+}
+
+.section_title.center {
+    text-align: center;
+}
+
+.experience-section {
+    padding: 65px 0 100px;
+    background-color: navy;
+    position: relative;
+    ;
+}
+
+.experience-section .experience-items {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.experience-items {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+
+.experience-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.experience-info p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fff;
+    opacity: 1;
+    -webkit-animation: showtext 0.5s 1s linear forwards;
+}
+
+.progress-line {
+    margin-top: 7px;
+    height: 10px;
+    width: 100%;
+    border: #cdcdcd;
+    background-repeat: 50px;
+    position: relative;
+
+}
+
+.progress-line span {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    border-color: #fd6e0a;
+    transition: 1s all;
+
+}
+
+.progress-line span.animate {
+    -webkit-animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+
+@-webkit-keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes animate {
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+@-webkit animate {
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+
+
+/* Profile image styles */
+.profile-image {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+}

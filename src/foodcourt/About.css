@@ -1,0 +1,68 @@
+.aboutsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center align items vertically */
+    padding: 40px; /* Add more padding for better spacing */
+    margin: 20px auto; /* Center align the section and add top/bottom margin */
+    max-width: 1200px; /* Limit the maximum width */
+    background-color: #f9f9f9; /* Light grey background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .sec {
+    width: 60%; /* Adjust width for better balance */
+    padding-right: 20px; /* Add padding on the right for spacing */
+  }
+  
+  .sec h1 {
+    font-size: 2.5em; /* Larger font size */
+    color: #333; /* Dark grey color */
+    margin-bottom: 20px; /* Space below heading */
+    text-align: center; /* Centered heading */
+  }
+  
+  .sec p {
+    font-size: 1.1em; /* Slightly larger font */
+    line-height: 1.6; /* Better line spacing */
+    color: #555; /* Medium grey color */
+    margin-bottom: 20px; /* Space below paragraphs */
+    text-align: justify; /* Justified text */
+  }
+  
+  .about-image {
+    width: 35%; /* Adjust width for better balance */
+    text-align: center; /* Center align the image */
+  }
+  
+  .about-image img {
+    max-width: 100%; /* Ensure the image is responsive */
+    border-radius: 10px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the image */
+  }
+  
+  @media (max-width: 768px) {
+    .aboutsection {
+      flex-direction: column; /* Stack elements vertically on small screens */
+      padding: 20px; /* Reduce padding on smaller screens */
+    }
+  
+    .sec, .about-image {
+      width: 100%; /* Full width for both sections */
+      padding: 0; /* Remove padding on smaller screens */
+    }
+  
+    .sec h1 {
+      font-size: 2em; /* Smaller font size for heading */
+    }
+  
+    .sec p {
+      font-size: 1em; /* Smaller font size for paragraphs */
+    }
+  }
+  .sec hr {
+    border: 0;
+    height: 2px;
+    background: gold; /* Dark color for the line */
+    margin: 20px 0; /* Space above and below the line */
+  }  

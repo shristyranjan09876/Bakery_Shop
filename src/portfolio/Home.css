@@ -1,0 +1,79 @@
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh; /* Adjust as necessary */
+    padding: 20px;
+    background: url(./img/gif2.gif);
+    background-size: cover;
+    /* background-color: #1ad1e9; */
+    /* &::-webkit-scrollbar{
+        display: none;
+    } */
+  }
+  
+  .homsection,
+  .homsection2 {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    
+  }
+  
+  .homsection h1 {
+    font-size: 2em;
+    margin: 0;
+    color: white;
+  }
+  
+  .homsection p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    color: white;
+  }
+  
+  .homsection span {
+    color: gold; 
+  }
+  
+  .profile-pic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .prhead{
+   margin: 0;
+   padding: 20px;
+    text-align: center;
+
+  }
+
+  .divsec{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.projctsec{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  }
+  
+  .social{
+    padding: 10px;
+color: gold;
+
+  }
+  .icon{
+    color: gold;
+    margin: 5px;
+  }

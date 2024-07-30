@@ -1,0 +1,41 @@
+.card {
+    background-color:black; /* White background for the card */
+    /* border: 1px solid #ddd;  */
+    /* Light grey border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation on hover */
+    overflow: hidden; /* Ensure content doesn't overflow */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .card-image {
+    width: 100%; /* Make image take full width of the card */
+    height: 200px; /* Set a fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+    /* border-bottom: 1px solid #ddd; */
+     /* Separate image from card body */
+  }
+  
+  .card-body {
+    padding: 20px; /* Add padding inside the card */
+  }
+  
+  .card-title {
+    font-size: 1.5em; /* Larger font size for title */
+    margin-bottom: 10px; /* Space below title */
+    color: white; /* Dark grey color */
+    text-align: center;
+  }
+  
+  .card-text {
+    font-size: 1em; /* Normal font size for text */
+    color: white; /* Medium grey color */
+    line-height: 1.6; /* Better line spacing */
+  }
+  .butn{
+    margin-left: 80px;
+  }
